@@ -2,4 +2,4 @@
 
 nome = input("digite seu nome: ")
 
-print(f'tem silva no seu nome?: {'silva' in nome}')
+print(f'tem silva no seu nome?: {'silva' in nome.upper()}')

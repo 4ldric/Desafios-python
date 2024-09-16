@@ -1,11 +1,11 @@
 # FAÇA UM PROGRAMA QUE LEIA UM NUMERO de 0 a 9999 e mostre na tela cada u dos digitos separados.
 
-numero = input('digite um numero: ')
+numero = int(input('digite um numero: '))
+unidade = numero // 1 % 10
+dezena = numero // 10 % 10
+centena = numero // 100 % 10
+milhar = numero // 1000 % 10
 
-if len(numero) < 4:
-    print(f'Unidade: {numero[2]} \nDezena: {numero[1]} \nCentena: {numero[0]}')
-   
-else:
-    print(f'Unidade: {numero[3]} \nDezena: {numero[2]} \nCentena: {numero[1]} \nMIlhar: {numero[0]}')
+print(f'Unidade: {unidade} \nDezena: {dezena} \nCentena: {centena} \nMIlhar: {milhar}')
 
 

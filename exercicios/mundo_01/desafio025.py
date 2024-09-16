@@ -3,6 +3,11 @@
 # EM QUE POSIÇÃO ELA APRECE A PRIMEIRA VEZ
 #EM QUE POSIÇÃO ELA APARECE A ULTIMA VEZ
 
-frase = input('digite uma frase: ')
 
-print(f'Primeira aparição: {frase.find('a')} \nUltima aparição: {frase.count('a',0,13)}')
+#RESOLUÇÂO PROFESSOR
+frase = input('digite uma frase: ').upper().strip()
+
+print(f'A letra A aparece {frase.count('A')} vezes')
+print(f'A primeira aparição na posição {frase.find('A')+1}')
+print(f'A ultima aparição na posição {frase.rfind('A')+1}')
+
